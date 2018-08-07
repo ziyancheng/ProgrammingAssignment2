@@ -1,9 +1,6 @@
 ## Caching the inverse of a Matrix:
 ## Matrix inversing is usually a costly computation and there maybe some benefit to caching the inverse 
-
-of a matrix rather than compute it repeatly. The following two function that are used to create a 
-
-matrix and store this matrix and caches its inverse.
+## of a matrix rather than compute it repeatly. The following two function that are used to create a matrix and store this matrix and caches its inverse.
 
 ## This function will create a matrix for storing its inverse.
 
@@ -38,7 +35,7 @@ cacheSolve <- function(x, ...) {
         
         if (!is.null(inve)){
           
-                message("Receiving cached data")
+                message("getting cached data")
                 return(inve)
         }
         
