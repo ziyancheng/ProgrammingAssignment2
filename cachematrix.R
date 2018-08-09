@@ -38,6 +38,7 @@ cacheSolve <- function(x, ...) {
 
         inve <- x$getInverse()
         
+        ## If the inverse gets computed, return the cached inverse
         if (!is.null(inve)){
           
                 message("getting cached data")
@@ -46,6 +47,7 @@ cacheSolve <- function(x, ...) {
         
         matr <- x$get()
         
+       ## Otherwise if the inverse doesn't get computed, it will get calculated. 
         inve <- solve(matr, ...)
         
         x$setInverse(inve)
